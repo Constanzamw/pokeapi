@@ -49,7 +49,7 @@ const server = express();
 
 server.name = 'API';
 const corsOptions = {
-  origin: 'http://localhost:5173',
+  origin: '*',
   credentials: true,
 };
 server.use(cors(corsOptions));
