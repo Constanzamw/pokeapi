@@ -6,7 +6,7 @@ const getDB = require ("../utils/getDb")
 const baseUrl = "https://pokeapi.co/api/v2/pokemon/";
 
 const getPokemons = async () => { 
-
+console.log("holu")
       
         let allPokemons = [];
         let endpoint = baseUrl;
