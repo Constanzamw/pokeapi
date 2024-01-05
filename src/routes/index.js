@@ -7,7 +7,7 @@ const getTypesHandler = require("../handlers/getTypesHandler");
 const ImageHandler = require('../handlers/imageHandler');
 const createUserHandler = require('../handlers/userHandlers/createUserHandler');
 const loginHandler = require ("../handlers/userHandlers/loginHandler");
-
+const deletePokeHandler = require('../handlers/deletePokeHandler');
 
 
 const router = Router();
@@ -24,7 +24,7 @@ router.post("/create", postPokemonHandler)
 router.get("/types", getTypesHandler)
 router.get("/image", ImageHandler)
 router.get("/:id", getPokemonById)
-
+router.delete("/:id", deletePokeHandler)
 
 
 
